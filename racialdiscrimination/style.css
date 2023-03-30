@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar {
+  font-family: 'Oswald', sans-serif;
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 240px;
+  cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+/* body */
+.rdimages {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0;
+  justify-content: center;
+}
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+    background: black;
+    color: white;
+    margin: 40 auto;
+    padding: 40 auto;
+}
+
+p {
+  text-align: center; 
+  padding: 20px;
+  margin: 7px;
+  font-size: 14px;
+    
+}
+
+h1 {
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-shadow: 2px 2px gray;
+}
+
+h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: gray;
+}
+
+.references a {
+  margin: auto;
+  padding: auto;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Playfair Display', sans-serif;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.footer {
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: #fff;
+}
+
+.container p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  margin-left: 80px;
+  text-transform: uppercase;
+}
+
+/* solutions */
+
+.solutions{
+  background-color: #fff;
+  color: black;
+}
+
+.solution div {
+  font-family: 'Playfair Display', sans-serif;
+  background-color: black;
+  width: 100%;
+  border: 3px solid aliceblue;
+  padding: 40px;
+  margin: 15px;
+}
+
+.solution {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.solution .sl1 {
+  width: fit-content;
+  height: max-content;
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(solution/educate.png);
+}
+
+.solution .sl2 {
+  width: fit-content;
+  height: max-content;
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(solution/raceawareness.png);
+}
+
+.solution .sl3 {
+  width: fit-content;
+  height: max-content;
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(solution/challenge.png);
+}
+
+.solution .sl4 {
+  width: fit-content;
+  height: max-content;
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(solution/report.png);
+}
+
+.solution .sl5 {
+  width: fit-content;
+  height: max-content;
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(solution/racism.png);
+}
+
+.solution .sl6 {
+  width: fit-content;
+  height: max-content;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(solution/racism.jpg);
+}
+
+/* gallery */
+
+.gallery {
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
+flex-direction: row;
+}
+
+.gallery p{
+  text-align: center;
+}
+
+.gallery div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-family: 'Oswald', sans-serif;
+  border: 3px;
+  margin: 40px;
+  padding: 0;
+}
+
+.gallerybox {
+  width: 400px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+.gallerybox:hover{
+  transform: translateY(-10px);
+}
+
+.gallery1 {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(Gallery/1st.png);  
+  transition-duration: 1s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+.gallery1:hover{
+  background-image: url(Gallery/1st.png);
+
+}
+
+.gallery1:hover p {
+  transform: translateY(-150px);
+  transition-duration: 1000ms;
+
+}
+
+.gallery2 {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(Gallery/pointout.png);
+}
+
+.gallery2:hover{
+  background-image: url(Gallery/pointout.png);
+}
+
+.gallery2:hover p {
+  transform: translateY(-150px);
+  transition-duration: 1000ms; 
+}
+
+.gallery3 {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(Gallery/explaning.png);
+}
+
+.gallery3:hover{
+  background-image: url(Gallery/explaning.png);
+}
+
+.gallery3:hover p {
+  transform: translateY(-150px);
+  transition-duration: 1000ms; 
+}
+
+.gallery4 {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(Gallery/brainstorm.png);
+}
+
+.gallery4:hover{
+  background-image: url(Gallery/brainstorm.png);
+}
+
+
+.gallery4:hover p {
+  transform: translateY(-150px);
+  transition-duration: 1000ms; 
+}
+
+.gallery5 {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(Gallery/ideas.png);
+}
+
+.gallery5:hover{
+  background-image: url(Gallery/ideas.png);
+}
+
+.gallery5:hover p {
+  transform: translateY(-150px);
+  transition-duration: 1000ms; 
+}
+
+.gallery6 {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(Gallery/evaluation.png);
+}
+
+.gallery6:hover{
+  background-image: url(Gallery/evaluation.png);
+}
+
+.gallery6:hover p {
+  transform: translateY(-150px);
+  transition-duration: 1000ms; 
+}
+/*
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+*/
+
+.aboutcontainer{
+  margin: auto 15px 20px;
+  padding: auto 20px 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aboutjustin{
+  height: 500px;
+  width: 250px;
+  text-align: center;
+  border: 2px solid #fff;
+  margin: auto 20px;
+  border-radius: 5px;
+
+}
+
+.aboutjero{
+  height: 500px;
+  width: 250px;
+  border: 2px solid #fff;
+  text-align: center;
+  margin: auto 20px;
+  border-radius: 5px;
+
+}
+
+.aboutmark{
+  height: 500px;
+  width: 250px;
+  border: 2px solid #fff;
+  text-align: center;
+  margin: auto 20px;
+  border-radius: 5px;
+
+}
+
+.aboutus h2, h3 {
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+}
+
+.orglogo {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+
